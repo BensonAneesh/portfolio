@@ -3,111 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Benson Aneesh</title>
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: #0d0d0d;
+            color: #e5e5e5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 40px;
-            background: #1e1e1e;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        .icon {
-            font-size: 64px;
-            margin-bottom: 20px;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: #ffb703;
-        }
-
-        p {
-            font-size: 1.1rem;
-            color: #a0a0a0;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-
-        /* Progress Bar */
-        .progress-container {
-            background-color: #333;
-            border-radius: 20px;
-            height: 12px;
-            width: 100%;
-            margin-bottom: 30px;
             overflow: hidden;
         }
 
-        .progress-bar {
-            background: linear-gradient(90deg, #ffb703, #fb8500);
-            height: 100%;
-            width: 70%; /* Adjust this to change progress percentage */
-            border-radius: 20px;
-            animation: load 2s ease-out-in;
+        .wrapper {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+            max-width: 600px;
         }
 
-        /* Social Links */
-        .social-links a {
-            color: #ffb703;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-            transition: color 0.3s ease;
+        .name-container {
+            font-size: clamp(1.8rem, 5vw, 3.5rem); /* Dynamically scales with screen size */
+            font-weight: 200;
+            letter-spacing: 0.4rem;
+            text-transform: uppercase;
+            line-height: 1.2;
         }
 
-        .social-links a:hover {
-            color: #fb8500;
+        .first-name {
+            color: #888888;
         }
 
-        /* Animations */
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        .last-name {
+            font-weight: 500;
+            color: #ffffff;
+            letter-spacing: 0.45rem;
         }
 
-        @keyframes load {
-            from { width: 0%; }
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: #444444;
+            margin: 2rem auto;
+        }
+
+        .status {
+            font-size: clamp(0.75rem, 2vw, 0.9rem);
+            font-weight: 300;
+            letter-spacing: 0.2rem;
+            color: #666666;
+            text-transform: uppercase;
+            animation: breathe 3s infinite ease-in-out;
+        }
+
+        @keyframes breathe {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Under Construction</h1>
-        <p>We are working hard to bring you something amazing. Our website is currently undergoing scheduled maintenance. Check back soon!</p>
-        
-        <div class="progress-container">
-            <div class="progress-bar"></div>
-        </div>
-
-        <div class="social-links">
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="mailto:info@yourdomain.com">Contact Us</a>
-        </div>
+    <div class="wrapper">
+        <h1 class="name-container">
+            <span class="first-name">benson</span> <span class="last-name">aneesh</span>
+        </h1>
+        <div class="divider"></div>
+        <p class="status">Coming Soon</p>
     </div>
 
 </body>
